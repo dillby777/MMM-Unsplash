@@ -44,6 +44,14 @@ Module.register("MMM-Unsplash", {
 
 				img1.src = obj.urls.raw + "&w=" + self.config.width + "&h=" + self.config.height + "&fit=crop"
 
+				if (self.config.showAttribution) {
+					const attrElement = document.getElementById("mmm-unsplash-attribution");
+
+					if (obj.user && obj.user.name > 0) {
+						attrElement.innerHTML += obj.username;
+					}
+				}
+				
 				if (self.config.showDescription) {
 					const descElement = document.getElementById("mmm-unsplash-description");
 
