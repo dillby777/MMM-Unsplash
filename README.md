@@ -16,6 +16,9 @@ A <a href="https://github.com/MichMich/MagicMirror">MagicMirror²</a> module use
 |`apiKey`|string|(REQUIRED) Your Unsplash API key.|`''`|
 |`updateInterval`|int|Number of seconds between image updates. Note that your API key is rate-limited, so if, for example, your rate limit was 50/hr, this should be no less than 72.|`1800` (30mins)|
 |`divName`|string|The ID of the div to use for the displayed image. This only needs to be set if you use something like [MMM-ProfileSwitcher](https://github.com/tosti007/MMM-ProfileSwitcher) and/or need to be able to load images from multiple Unsplash modules at once.|`'mmm-unsplash-placeholder'`|
+|`showDescription`|bool|Show photo description and location|`false`|
+|`showAttribution`|bool|Show photo user's name and profile image|`false`|
+|`userPresenceAction`|string|What action to take when a `USER_PRESENCE` notification is received. Choices are "none," "show," and "hide."|`none`|
 
 Here is an example of an entry in config.js
 ```
