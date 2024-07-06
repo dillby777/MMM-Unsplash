@@ -18,7 +18,7 @@ A <a href="https://github.com/MichMich/MagicMirror">MagicMirror²</a> module use
 |`divName`|string|The ID of the div to use for the displayed image. This only needs to be set if you use something like [MMM-ProfileSwitcher](https://github.com/tosti007/MMM-ProfileSwitcher) and/or need to be able to load images from multiple Unsplash modules at once.|`'mmm-unsplash-placeholder'`|
 |`showDescription`|bool|Show photo description and location|`false`|
 |`showAttribution`|bool|Show photo user's name and profile image|`false`|
-|`userPresenceAction`|string|What action to take when a `USER_PRESENCE` notification is received. Choices are "none," "show," and "hide."|`none`|
+|`userPresenceAction`|string|What action to take when a `USER_PRESENCE` notification is received. Choices are "none," "show," and "hide."|`'none'`|
 
 Here is an example of an entry in config.js
 ```
