@@ -9,6 +9,7 @@ Module.register("MMM-Unsplash", {
 		updateInterval: 1800,
 		divName: "mmm-unsplash-placeholder",
 		showDescription: false,
+		showAttribution: false,
 		userPresenceAction: "none",
 	},
 
